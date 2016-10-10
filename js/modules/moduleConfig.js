@@ -38,6 +38,17 @@ define({
             path:"SafeSurfing/SafeSurfing"
         },
         LinkProcess:{
+            settings:{
+                enableYoutubeProcess:{
+                    text:"Tự động hiện youtube player",
+                    default:"true"
+                },
+                enableImageLinkProcess:{
+                    text:"Tự động hiện hình ảnh",
+                    default:"true"
+                },
+            },
+            setting:"options-page/linkProcess",
             path:"LinkProcess/LinkProcess"
         },
         QuickIgnore:{
@@ -50,9 +61,25 @@ define({
             path:"PreviewThread/PreviewThread"
         },
         FacebookSharing:{
-            path:"SocialSharing/FacebookSharing"
+            path:"SocialSharing/FacebookSharing",
+            settings:{
+                enableFacebookSharing:{
+                    text:"Share lên Facebook",
+                    default:"false"
+                },
+            },
+            setting:"options-page/FacebookSharing",
         },
         PageByKey:{},
+        HotLinks:{
+            settings:{
+                quickLinks:{
+                    text:"Truy cập nhanh",
+                    default:"17,33"
+                },
+            },
+            setting:"options-page/quickLinks"
+        },
         LoadQuickMQuote:{
             path:"Editor/LoadQuickMQuote"
         }
